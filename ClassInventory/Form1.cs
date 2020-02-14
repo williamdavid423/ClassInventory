@@ -32,6 +32,10 @@ namespace ClassInventory
 
         private void removeButton_Click(object sender, EventArgs e)
         {
+            // This is to be completed in Part II. You will use 
+            // Lambda Expressions.
+            //---------------------------
+
             // TODO - if object is in list remove it
 
             // TODO - display message to indicate deletion made
@@ -39,12 +43,20 @@ namespace ClassInventory
 
         private void searchButton_Click(object sender, EventArgs e)
         {
+            // This is to be completed in Part II. You will use 
+            // Lambda Expressions.
+            //---------------------------
+
             // TODO - if object entered exists in list show it
             // TODO - else show not found message
         }
 
         private void showButton_Click(object sender, EventArgs e)
         {
+            // This is to be completed in Part II. You will use 
+            // Lambda Expressions.
+            //---------------------------
+
             // TODO - show all objects in list
         }
     }
