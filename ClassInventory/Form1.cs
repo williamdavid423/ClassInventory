@@ -53,11 +53,7 @@ namespace ClassInventory
 
         private void showButton_Click(object sender, EventArgs e)
         {
-            // This is to be completed in Part II. You will use 
-            // Lambda Expressions.
-            //---------------------------
-
-            // TODO - show all objects in list
+            // TODO - show all objects in list. Use a foreach loop.
         }
     }
 }
