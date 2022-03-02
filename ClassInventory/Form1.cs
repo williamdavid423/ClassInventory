@@ -13,6 +13,7 @@ namespace ClassInventory
     public partial class Form1 : Form
     {
         // TODO - create a List to store all inventory objects
+        List<PlayerObjects> po = new List<PlayerObjects>();
 
         public Form1()
         {
@@ -22,12 +23,21 @@ namespace ClassInventory
         private void addButton_Click(object sender, EventArgs e)
         {
             // TODO - gather all information from screen 
-
+            string name = nameInput.Text;
+            int age = Convert.ToInt32(ageInput.Text);
+            string team = teamInput.Text;
+            string position = positionInput.Text;
             // TODO - create object with gathered information
-
+            PlayerObjects p = new PlayerObjects(name, team, position, age);
             // TODO - add object to global list
-
+            po.Add(p);
             // TODO - display message to indicate addition made
+            label1.Text = "";
+
+            foreach (PlayerObjects player in po)
+            {
+                label1.Text += $"{player.name} {player.team} {player.position} {player.age} \n";
+            }
         }
 
         private void removeButton_Click(object sender, EventArgs e)
