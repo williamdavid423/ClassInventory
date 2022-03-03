@@ -49,6 +49,23 @@ namespace ClassInventory
             // TODO - if object is in list remove it
 
             // TODO - display message to indicate deletion made
+            string name = removeInput.Text;
+
+            foreach (PlayerObjects player in po)
+            {
+                if (name == player.name)
+                {
+                    po.Remove(player);
+                    break;
+                }
+            }
+
+            label1.Text = "";
+
+            foreach (PlayerObjects player in po)
+            {
+                label1.Text += $"{player.name} {player.team} {player.position} {player.age} \n";
+            }
         }
 
         private void searchButton_Click(object sender, EventArgs e)
